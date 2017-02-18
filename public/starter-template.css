@@ -1,0 +1,33 @@
+
+
+html, body {
+  height: 100%;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+#Midsection {
+  background: url('background.jpg') center center no-repeat;
+  height: 100%;
+  color:white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#Midsection h1{
+  margin-left: 205px;
+}
+
+#Midsection a {
+  margin-left: 100px;
+  margin-right: -93px;
+}
