@@ -15,7 +15,7 @@ router.get("/Movies", function(req, res, err) {
             var moviedata;
             for(var i = 0; i < data.results.length; i++) {
 
-                moviedata += "  <div class='row'> <div class='col-md-6'> <img alt='Movie Image' src='https://image.tmdb.org/t/p/w300"+ data.results[i].backdrop_path + "' class='img-rounded'> <h2>" + data.results[i].original_title + "</h2> <p>" + data.results[i].overview + "</p> </div> <div class='col-md-6'> </div> </div>"
+                moviedata += "  <div class='row'> <div class='col-md-6'> <img alt='Movie Image' src='https://image.tmdb.org/t/p/w300"+ data.results[i].backdrop_path + "' class='img-rounded'> <h2>" + data.results[i].original_title + "</h2> <p>" + data.results[i].overview + "</p> <p> The score for this movie was: " + data.results[i].vote_average + " </p> </div> <div class='col-md-6'> </div> </div>"
 
 
             }
